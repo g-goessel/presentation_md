@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Guimoz">
+  <title>Présentation Markdown</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="/css/reveal.css">
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  <link rel="stylesheet" href="/css/theme/black.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '/css/print/pdf.css' : '/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="/lib/js/html5shiv.js"></script>
+  <![endif]-->
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+  <h1 class="title">Présentation Markdown</h1>
+  <p class="author">Guimoz</p>
+  <p class="date">27 Octobre 2017</p>
+</section>
+
+<section id="markdown" class="slide level1">
+<h1>Markdown</h1>
+<p>Un langage simple pour des notes efficaces</p>
+</section>
+<section id="pourquoi-markdown" class="slide level1">
+<h1>Pourquoi Markdown ?</h1>
+<ul>
+<li class="fragment">Simple</li>
+<li class="fragment">Rapide</li>
+<li class="fragment">Pas d'apprentissage</li>
+</ul>
+</section>
+<section id="exemples" class="slide level1">
+<h1>Exemples</h1>
+</section>
+<section id="texte" class="slide level1">
+<h1>Texte</h1>
+<pre><code>*single asterisks*
+_single underscores_
+**double asterisks**
+__double underscores__</code></pre>
+<p><em>single asterisks</em></p>
+<p><em>single underscores</em></p>
+<p><strong>double asterisks</strong></p>
+<p><strong>double underscores</strong></p>
+</section>
+<section id="texte-v2" class="slide level1">
+<h1>Texte v2</h1>
+<pre><code>~~tilde~~
+retour à ligne : une ligne vide</code></pre>
+<p><del>tilde</del></p>
+</section>
+<section id="titres" class="slide level1">
+<h1>Titres</h1>
+<pre><code># Titre
+## Sous-titre
+###Sous-sous-titre</code></pre>
+<p><small><code>#Titre</code> crée une nouvelle slide en mode présentation</small></p>
+</section>
+<section id="citation" class="slide level1">
+<h1>Citation</h1>
+<pre><code>&gt; Citation
+&gt;
+&gt;&gt; Citation2</code></pre>
+<blockquote>
+<p>Citation</p>
+<blockquote>
+<p>Citation2</p>
+</blockquote>
+</blockquote>
+</section>
+<section id="inclusion-de-code" class="slide level1">
+<h1>Inclusion de Code</h1>
+<pre><code>`one_line=True`</code></pre>
+<pre><code>```python
+def multiple_lignes():
+    pass
+```</code></pre>
+<p><code>one_line=True</code></p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> multiple_lines():
+    <span class="cf">pass</span></code></pre></div>
+</section>
+<section id="liste-ordonnée" class="slide level1">
+<h1>Liste Ordonnée</h1>
+<pre><code>1. Premier élément
+2. Second élément</code></pre>
+<ol type="1">
+<li class="fragment">Premier élément</li>
+<li class="fragment">Second élément</li>
+</ol>
+</section>
+<section id="liste-non-ordonnée" class="slide level1">
+<h1>Liste non-ordonnée</h1>
+<pre><code>- Élément
+* autre
++ plop</code></pre>
+<ul>
+<li class="fragment">Élément</li>
+<li class="fragment">autre</li>
+<li class="fragment">plop</li>
+</ul>
+</section>
+<section id="images" class="slide level1">
+<h1>Images</h1>
+<pre><code>Inline-style:
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png &quot;Logo Title Text 1&quot;)</code></pre>
+<p>Inline-style: <img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" title="Logo Title Text 1" alt="alt text" /></p>
+</section>
+<section id="liens" class="slide level1">
+<h1>Liens</h1>
+<pre><code>[I&#39;m an inline-style link with title](https://www.google.com &quot;Google&#39;s Homepage&quot;)</code></pre>
+<p><a href="https://www.google.com" title="Google&#39;s Homepage">I'm an inline-style link with title</a></p>
+</section>
+<section id="tableaux" class="slide level1">
+<h1>Tableaux</h1>
+<pre><code>| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th>Tables</th>
+<th style="text-align: center;">Are</th>
+<th style="text-align: right;">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>col 3 is</td>
+<td style="text-align: center;">right-aligned</td>
+<td style="text-align: right;">$1600</td>
+</tr>
+<tr class="even">
+<td>col 2 is</td>
+<td style="text-align: center;">centered</td>
+<td style="text-align: right;">$12</td>
+</tr>
+<tr class="odd">
+<td>zebra stripes</td>
+<td style="text-align: center;">are neat</td>
+<td style="text-align: right;">$1</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="maths" class="slide level1">
+<h1>Maths</h1>
+<pre><code>$\LaTeX \heartsuit \frac{5}{2}$</code></pre>
+<p><span class="math inline">\(\LaTeX \heartsuit \frac{5}{2}\)</span></p>
+</section>
+<section id="convertir-avec-pandoc" class="slide level1">
+<h1>Convertir avec Pandoc</h1>
+<section id="section" class="level2">
+<h2></h2>
+<p>On peut générer plusieurs types de fichiers à partir d'un document markdown</p>
+<p><a href="/markdown/presentation.md">Source markdown</a></p>
+</section>
+<section id="un-pdf" class="level2">
+<h2>Un pdf</h2>
+<p><code>pandoc</code></p>
+<p><a href="/markdown/presentation.pdf">Exemple pdf</a></p>
+</section>
+<section id="un-html" class="level2">
+<h2>Un html</h2>
+<p><code>pandoc</code></p>
+<p><a href="/markdown/presentation.html">Exemple html</a></p>
+</section>
+<section id="une-présentation-reveal.js" class="level2">
+<h2>Une présentation reveal.js</h2>
+<p><code>pandoc</code></p>
+<p><a href="/markdown.html">Exemple présentation</a></p>
+</section>
+</section>
+<section id="plus-dinfos" class="slide level1">
+<h1>Plus d'infos</h1>
+<p><a href="https://daringfireball.net/projects/markdown/" class="uri">https://daringfireball.net/projects/markdown/</a></p>
+<p><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" class="uri">https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet</a></p>
+</section>
+    </div>
+  </div>
+
+  <script src="/lib/js/head.min.js"></script>
+  <script src="/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '/plugin/zoom-js/zoom.js', async: true },
+          { src: '/plugin/notes/notes.js', async: true },
+          { src: '/plugin/math/math.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
